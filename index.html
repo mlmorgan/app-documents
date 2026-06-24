@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            max-width: 700px;
+            max-width: 800px;
             margin: 80px auto;
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
@@ -14,17 +14,38 @@
             text-align: center;
         }
         h1 {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
+        }
+        .app-section {
+            margin: 40px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .app-section h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
         a {
-            display: block;
-            margin: 20px 0;
-            font-size: 18px;
+            display: inline-block;
+            padding: 10px 20px;
             text-decoration: none;
             color: #007aff;
+            border: 1px solid #007aff;
+            border-radius: 4px;
+            transition: background-color 0.2s;
         }
         a:hover {
-            text-decoration: underline;
+            background-color: #007aff;
+            color: white;
         }
     </style>
 </head>
@@ -32,8 +53,21 @@
 
 <h1>Legal Information</h1>
 
-<a href="privacy.html">Privacy Policy</a>
-<a href="terms.html">Terms &amp; Conditions</a>
+<div class="app-section">
+    <h2>Flashcards</h2>
+    <div class="links">
+        <a href="flashcards/privacy.html">Privacy Policy</a>
+        <a href="flashcards/terms.html">Terms &amp; Conditions</a>
+    </div>
+</div>
+
+<div class="app-section">
+    <h2>Wildlife Finder</h2>
+    <div class="links">
+        <a href="wildlife-finder/privacy.html">Privacy Policy</a>
+        <a href="wildlife-finder/terms.html">Terms &amp; Conditions</a>
+    </div>
+</div>
 
 </body>
 </html>
